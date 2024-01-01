@@ -29,7 +29,7 @@ def process_image(file):
 @app.route('/')
 def index():
     return render_template('index.html')
-@app.route('/api/upload', methods=['POST','GET'])
+@app.route('/api/uploads', methods=['POST','GET'])
 def upload_image():
     print(request.files)
     if 'image' not in request.files:
